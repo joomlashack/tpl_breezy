@@ -15,7 +15,7 @@ defined('_JEXEC') or die('Restricted access');
 <html>
 <head>
 <w:head />
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans&v1' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&v1' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif&v1' rel='stylesheet' type='text/css'>
 <?php if(($this->countModules('banner') == 0)) { ?>
 <style type="text/css">
