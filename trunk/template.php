@@ -20,7 +20,7 @@ defined('_JEXEC') or die('Restricted access');
 <?php if(($this->countModules('banner') == 0)) { ?>
 <style type="text/css">
 body.home #wrapper-inner {
-background: url("templates/js_breeze/images/innerfade_content.png") no-repeat scroll center top transparent;
+background: url(<?php echo $this->baseurl ?>/templates/js_breeze/images/innerfade_content.png) no-repeat scroll center top transparent;
 }
 </style>
 <?php } ?>
@@ -33,14 +33,17 @@ background: url("templates/js_breeze/images/innerfade_content.png") no-repeat sc
   </div>
   <div class="clear"></div>
   <div id="wrapper-inner">
+	<?php if ($this->countModules('banner')) : ?>
     <div id="banner" class="container_12 clearfix">
       <w:module type="single" name="banner" chrome="none" />
       <div class="clear"></div>
     </div>
+    <?php endif; ?>
     <div class="clear"></div>
     <div id="container">
       <div id="container-inner" class="border">
-        <div class="inner-border">
+        <div class="mid___cols__">
+        
           <div class="container_12 clearfix">
           	<?php if ($this->countModules('grid-top1')) : ?>
             <div id="stage">
@@ -81,8 +84,7 @@ background: url("templates/js_breeze/images/innerfade_content.png") no-repeat sc
     </div>
     <?php if ($this->countModules('grid-bottom2')) : ?>
     <div id="bottom">
-      <div id="bottom-inner" class="border">
-        <div class="inner-border">
+      <div id="bottom-inner">
           <div class="container_12 clearfix">
             <w:module type="grid" name="grid-bottom2" chrome="wrightflexgrid" />
             <div class="clear"></div>
