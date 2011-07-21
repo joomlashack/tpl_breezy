@@ -228,10 +228,6 @@ hr {
 	list-style:none;
 	display:inline;
 }
-div.joomlashack {
-	margin:10px 0;
-	background-position:50% 0;
-}
 /* @end */
 
 /* @group Joomla! Components ====================================================*/
@@ -329,6 +325,26 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 	-moz-border-radius:5px 5px 0 0;
 	-webkit-border-radius:5px 5px 0 0;
 }
+#article-index {
+	width:40%;
+	float:right;
+	margin:0 0 10px 10px;
+}
+#article-index ul,
+#article-index li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#article-index ul {
+	border-top:1px solid #CCC;
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+}
+#article-index li {
+	padding:3px 5px;
+	border-bottom:1px solid #CCC;
+}
 /* Section Table */
 .cat-items {
 	margin:0;
@@ -350,6 +366,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 	padding:10px 10px 10px 20px;
 	list-style:none;
 }
+
 /* Category Table */
 table.category {
 	width:100%;
@@ -1174,3 +1191,7 @@ div.slideTitle {
 }
 
 /* @end */
+div a.joomlashack {
+	margin:0 auto;
+	width:100px;
+}
