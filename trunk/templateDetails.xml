@@ -72,8 +72,6 @@
       <option value="no">DISABLE</option>
       <option value="yes">ENABLE</option>
     </param>
-    <param name="headerscript" type="textarea" default="" label="Header Script" description="If you need to add scripts to your header (like Google verification code, perhaps), you should enter them here without the &lt;script&gt; tags." rows="5" cols="50" />
-    <param name="footerscript" type="textarea" default="" label="Footer Script" description="If you need to add scripts to your footer (like Google Analytics tracking code), you should enter them here without the &lt;script&gt; tags." rows="5" cols="50" />
     <!-- End of default Wright params -->
   </params>
   <config>
@@ -101,8 +99,6 @@
           <option value="no">Disable</option>
           <option value="yes">Enable</option>
         </field>
-        <field name="headerscript" type="textarea" default="" label="Header Script" description="If you need to add scripts to your header (like Google verification code, perhaps), you should enter them here without the &lt;script&gt; tags." rows="5" cols="50" />
-        <field name="footerscript" type="textarea" default="" label="Footer Script" description="If you need to add scripts to your footer (like Google Analytics tracking code), you should enter them here without the &lt;script&gt; tags." rows="5" cols="50" />
         <!-- End of default Wright params -->
       </fieldset>
     </fields>
