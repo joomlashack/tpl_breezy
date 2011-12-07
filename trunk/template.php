@@ -92,7 +92,6 @@ background: url(<?php echo $this->baseurl ?>/templates/js_breeze/images/innerfad
     </div>
     <?php endif; ?>
   </div>
-</div>
 <div id="footer">
   <div id="footer-inner">
     <div class="container_12">
