@@ -128,7 +128,8 @@ hr {
 	line-height:1em;
 	font-weight:normal;
 }
-#menu ul li a {
+#menu ul li a,
+#menu ul li span {
 	display:block;
 	text-decoration:none;
 	position:relative;
@@ -158,7 +159,8 @@ hr {
 	position: relative;
 	text-align: left;
 }
-#menu ul ul li a {
+#menu ul ul li a,
+#menu ul ul li span{
 	border-radius: 0;
 	height: 28px;
 	line-height: 28px;
@@ -586,11 +588,12 @@ table.pollstableborder th {
 
 /* default module styles */
 .moduletable, .moduletable_menu, .moduletable_text, .module, .module_menu, .module_text {
-	margin-bottom:40px;
+	margin-bottom:30px;
 	font-size:80%;
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
+	overflow: hidden;
 }
 .moduletable_blue, .moduletable_lightblue, .moduletable_white, .moduletable_red, .moduletable_gray, .moduletable_green {
 	margin-bottom:40px;
@@ -843,6 +846,7 @@ ul.newsfeed li {
 	float: right;
 	text-align: right;
 	margin:31px 0 0;
+	padding: 5px;
 }
 .moduletable .search .inputbox {
 	background:transparent;
@@ -851,6 +855,10 @@ ul.newsfeed li {
 	padding: 5px;
 	width: 285px;
 	margin:0 5px;
+}
+aside .moduletable .search .inputbox{
+	width:90%
+	
 }
 .moduletable .search .button {
 	background: transparent;
@@ -875,7 +883,10 @@ ul.newsfeed li {
 	display:block;
 	padding:0;
 }
-.moduletable_menu ul.menu li a, .module_menu ul.menu li a {
+.moduletable_menu ul.menu li a, 
+.module_menu ul.menu li a,
+.moduletable_menu ul.menu li span, 
+.module_menu ul.menu li span {
 	display:block;
 	padding:3px 3px 3px 20px;
 }

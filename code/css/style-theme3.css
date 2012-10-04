@@ -70,16 +70,21 @@ hr {
 	-moz-text-shadow:2px 2px 0 #FFF;
 	-webkit-text-shadow:2px 2px 0 #FFF;
 }
-#menu ul li a {
+#menu ul li a,
+#menu ul li span{
 	color: #464646;
 	text-shadow: 0 1px 0 #F6F6F6;
 	-moz-text-shadow:1px 1px 0 #F6F6F6;
 	-webkit-text-shadow:1px 1px 0 #F6F6F6;
 }
-#menu ul li a:hover {
+#menu ul li a:hover,
+#menu ul li span:hover {
 	color:#990000;
 }
-#menu ul li.active a, #menu ul li a.active {
+#menu ul li.active a,
+#menu ul li a.active,
+#menu ul li.active span,
+#menu ul li span.active {
 	color: #990000;
 	text-shadow: 0 1px 0 #F2F2F2;
 	-moz-text-shadow: 0 1px 0 #F2F2F2;
@@ -95,12 +100,15 @@ hr {
 #menu ul li ul li:hover {
 	border-bottom-color:#F1F1F1;
 }
-#menu li:hover li a, #menu li li a, #menu li.active li a, #menu li li:hover ul li a {
+#menu li:hover li span, 
+#menu li li a, #menu li.active li span, 
+#menu li li:hover ul li span {
 	border-bottom: 1px solid #EFEFEF;
 	color: #505050;
 	text-shadow: none;
 }
-#menu ul li ul li a {
+#menu ul li ul li a,
+#menu ul li ul li span {
 	border-bottom: 1px solid #EFEFEF;
 	color: #505050;
 	font-family: DroidSans, Arial, Helvetica Neue, Helvetica, sans-serif;
@@ -111,7 +119,8 @@ hr {
 }
 #menu li:hover li a, #menu li li a, #menu li.active li a, #menu li li:hover ul li a {
 }
-#menu ul li ul li a:hover {
+#menu ul li ul li a:hover,
+#menu ul li ul li span:hover {
 	background:#F1F1F1;
 	color:#990000;
 }
