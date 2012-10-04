@@ -316,8 +316,6 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 	top: 1px;
 }
 .items-more {
-	margin:0 0 40px 0;
-	padding:10px;
 	font-size:80%;
 	border-radius:5px;
 	-moz-border-radius:5px;
@@ -450,8 +448,8 @@ table.pagenav th {
 	margin:10px 0;
 }
 .panel {
-	margin:0 0 10px 0;
-	padding:10px;
+	margin:0 ;
+	padding:0 0 0 10px;
 	list-style:none;
 }
 .contact label {
@@ -1208,4 +1206,32 @@ div.slideTitle {
 div a.joomlashack {
 	margin:0 auto;
 	width:100px;
+}
+fieldset.filters div.alert{
+	margin: 0 ;
+	padding: 0;
+	border: 0 none;
+	border-radius:0 0 0 0;
+}
+.content_rating{
+	margin-bottom:10px;
+}
+dl.article-info{
+	font-size: 12px;
+}
+.btn-group .btn{
+	box-shadow: 0 0 0;
+	border:0 none
+}
+#searchForm fieldset.word, 
+#searchForm .searchintro, 
+#searchForm .phrase, 
+#searchForm .only{
+	margin: 0;
+}
+.panel h3{
+	margin-top: 0;
+}
+.login-fields label{
+	min-width: 90px;
 }
