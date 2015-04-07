@@ -16,7 +16,7 @@ Ctrl/Cmd + F to find the @groups named below
 @group Joomla! Components
 #Joomla! component styles
 
-@group Joomla! Modules 
+@group Joomla! Modules
 # Joomla! module styles
 
 @group Bonus Styles
@@ -174,7 +174,7 @@ hr {
 	visibility:visible;
 }
 #wrapper-inner {
-	
+
 }
 #elements {
 	padding: 20px 0 0 0;
@@ -591,7 +591,6 @@ table.pollstableborder th {
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
-	overflow: hidden;
 }
 .moduletable_blue, .moduletable_lightblue, .moduletable_white, .moduletable_red, .moduletable_gray, .moduletable_green {
 	margin-bottom:40px;
@@ -856,7 +855,7 @@ ul.newsfeed li {
 }
 aside .moduletable .search .inputbox{
 	width:90%
-	
+
 }
 .moduletable .search .button {
 	background: transparent;
@@ -881,9 +880,9 @@ aside .moduletable .search .inputbox{
 	display:block;
 	padding:0;
 }
-.moduletable_menu ul.menu li a, 
+.moduletable_menu ul.menu li a,
 .module_menu ul.menu li a,
-.moduletable_menu ul.menu li span, 
+.moduletable_menu ul.menu li span,
 .module_menu ul.menu li span {
 	display:block;
 	padding:3px 3px 3px 20px;
@@ -1223,9 +1222,9 @@ dl.article-info{
 	box-shadow: 0 0 0;
 	border:0 none
 }
-#searchForm fieldset.word, 
-#searchForm .searchintro, 
-#searchForm .phrase, 
+#searchForm fieldset.word,
+#searchForm .searchintro,
+#searchForm .phrase,
 #searchForm .only{
 	margin: 0;
 }
