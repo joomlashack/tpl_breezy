@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
-  <name>js_breeze</name>
-  <creationDate>April 2015</creationDate>
+  <name>js_breezy</nawme>
+  <creationDate>June 2015</creationDate>
   <author>Joomlashack</author>
   <authorEmail>support@joomlashack.com</authorEmail>
-  <authorUrl>http://www.joomlashack.com</authorUrl>
-  <copyright>Copyright Joomlashack 2015. All rights reserved</copyright>
+  <authorUrl>https://www.joomlashack.com</authorUrl>
+  <copyright>Copyright Joomlashack 2016. All rights reserved</copyright>
   <license>GNU GPLv2</license>
-  <version>2.0.0</version>
+  <version>3.0.0_beta</version>
   <description>
     <![CDATA[<p>This is the js_breeze template by <a href="http://www.joomlashack.com">Joomlashack</a></p>]]>
   </description>
