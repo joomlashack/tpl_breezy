@@ -1,2 +1,2 @@
-www.dir=/var/www/breeze
+www.dir=/var/www/keenly/
 node.build=all
