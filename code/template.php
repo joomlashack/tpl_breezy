@@ -34,19 +34,18 @@ defined('_JEXEC') or die('Restricted access');
 			<!-- header -->
 			<header id="header">
 				<div class="<?php echo $wrightGridMode; ?> clearfix">
-					<w:logo name="top" />
+					<w:logo name="menu" />
 					<div class="clear"></div>
 				</div>
 			</header>
-			<?php
-				if ($this->countModules('menu'))
-					:
-			?>
-			<!-- menu -->
-	   		<w:nav name="menu" />
-			<?php
-				endif;
-			?>
+            <?php
+                if ($this->countModules('top'))
+                :
+                ?>
+                <w:module type="none" name="top" chrome="xhtml" />
+            <?php
+                endif;
+            ?>
 			<!-- featured -->
 			<?php
 				if ($this->countModules('featured'))
