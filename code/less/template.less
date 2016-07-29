@@ -137,31 +137,24 @@ input[type="color"],
 }
 
 #footer {
-	background-color: darken(@color_one, 5%);
+	background-color: @grayDark;
 	background-image: none;
 
 	.footer-content {
 		padding-bottom: 20px;
 		padding-top: 40px;
-
-		a {
-			color: @color_two;
-
-			&:hover,
-			&:focus,
-			&:active {
-				color: darken(@color_two, 10%);
-			}
-		}
 	}
+}
 
-	ul.jssocialicons > li > a {
-		color: inherit;
+.footer-content {
+
+	a {
+		color: @color_two;
 
 		&:hover,
 		&:focus,
 		&:active {
-			color: inherit;
+			color: darken(@color_two, 10%);
 		}
 	}
 }
