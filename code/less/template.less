@@ -1,5 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,300);
 
+a {
+	.transition(all 0.2s linear 0s);
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+}
+
 .home {
 	background-image: url(../images/green/bg.png);
 	background-repeat: repeat-x;
@@ -8,6 +17,18 @@
 .dropdown-menu {
 	.border-radius(0);
 	border: none;
+}
+
+.nav-list {
+
+	> li > a {
+		padding: 3px 0;
+
+		&:hover,
+		&:focus {
+			background: none;
+		}
+	}
 }
 
 #header {
@@ -25,7 +46,20 @@
 }
 
 #footer {
-	background-color: @color_one;
+	background-color: darken(@color_one, 5%);
 	background-image: none;
 	padding-top: 15px;
+
+	.footer-content {
+
+		a {
+			color: @color_two;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: darken(@color_two, 10%);
+			}
+		}
+	}
 }
