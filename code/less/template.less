@@ -1,7 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,300);
 
+body {
+	background-image: url(../images/green/bg-default.png);
+	background-repeat: repeat-x;
+
+	&.home {
+		background-image: url(../images/green/bg-home.png);
+	}
+
+	> .container,
+	> .container-fluid {
+		padding-bottom: 20px;
+	}
+}
+
 a {
 	.transition(all 0.2s linear 0s);
+
 	&:hover,
 	&:focus,
 	&:active {
@@ -9,9 +24,8 @@ a {
 	}
 }
 
-.home {
-	background-image: url(../images/green/bg.png);
-	background-repeat: repeat-x;
+body {
+
 }
 
 .dropdown-menu {
@@ -19,16 +33,41 @@ a {
 	border: none;
 }
 
+.navbar .nav > .active > a {
+	.box-shadow(none);
+
+	&:hover,
+	&:focus {
+		.box-shadow(none);
+	}
+}
+
+.navbar-inverse {
+
+	.brand,
+	.nav > li > a {
+		text-shadow: none;
+	}
+}
+
 .nav-list {
 
 	> li > a {
-		padding: 3px 0;
+		background: @grayLighter;
+		margin-bottom: 1px;
+		text-shadow: none;
+		padding: 5px 15px;
 
 		&:hover,
 		&:focus {
-			background: none;
+			background: darken(@grayLighter, 3%);
 		}
 	}
+}
+
+.text-center ul.jssocialicons-horizontal > li {
+	display: inline-block;
+	float: unset !important;
 }
 
 #header {
@@ -48,9 +87,10 @@ a {
 #footer {
 	background-color: darken(@color_one, 5%);
 	background-image: none;
-	padding-top: 15px;
 
 	.footer-content {
+		padding-bottom: 20px;
+		padding-top: 40px;
 
 		a {
 			color: @color_two;
@@ -60,6 +100,16 @@ a {
 			&:active {
 				color: darken(@color_two, 10%);
 			}
+		}
+	}
+
+	ul.jssocialicons > li > a {
+		color: inherit;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: inherit;
 		}
 	}
 }
