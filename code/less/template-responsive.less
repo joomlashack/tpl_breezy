@@ -65,8 +65,22 @@
 
 @media (max-width: 979px) {
 
+	#toolbar .search.pull-right {
+		float: none;
+
+		form:after {
+			left: 185px;
+		}
+	}
+
 	#header {
+
+		#logo {
+			max-width: 500px;
+		}
+
 		.navbar {
+
 			.navbar-inner {
 				background-color: #fff;
 
@@ -82,8 +96,10 @@
 		}
 
 		.nav-collapse {
+
 			.nav > li,
 			.nav > li {
+
 				&>a:hover,
 				&>a:focus {
 					background-color: @grayLighter;
@@ -91,6 +107,7 @@
 			}
 
 			.dropdown-menu {
+
 				a:hover,
 				a:focus {
 					background-color: @grayLighter;
