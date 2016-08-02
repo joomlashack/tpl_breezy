@@ -129,8 +129,13 @@ input[type="color"],
 	&:hover,
 	&:focus,
 	&:active {
-		background: lighten(@color_one, 5%);
+		background: @color_one;
 		color: @white;
+		.box-shadow(none);
+	}
+
+	&:focus {
+		outline: none;
 	}
 }
 
@@ -263,4 +268,66 @@ p.readmore {
 
 .color-yellow {
 	color: #6E9C27;
+}
+
+/* Blink effect
+ ========================================================================== */
+
+.btn {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	.transition(all 0.2s ease);
+
+	&:hover {
+		z-index: 1000;
+	}
+}
+
+.blink {
+	display: block;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.3);
+	.border-radius(100%);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+}
+
+.animate {
+	-webkit-animation: blinkit 0.65s linear;
+	-moz-animation: blinkit 0.65s linear;
+	-ms-animation: blinkit 0.65s linear;
+	-o-animation: blinkit 0.65s linear;
+	animation: blinkit 0.65s linear;
+}
+
+@-webkit-keyframes blinkit {
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(2.5);
+	}
+}
+
+@-moz-keyframes blinkit {
+	100% {
+		opacity: 0;
+		-moz-transform: scale(2.5);
+	}
+}
+
+@-o-keyframes blinkit {
+	100% {
+		opacity: 0;
+		-o-transform: scale(2.5);
+	}
+}
+
+@keyframes blinkit {
+	100% {
+		opacity: 0;
+		transform: scale(2.5);
+	}
 }
