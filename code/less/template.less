@@ -116,6 +116,14 @@ input[type="color"],
 	}
 }
 
+.pager li {
+
+	> a,
+	> span {
+		.border-radius(4px);
+	}
+}
+
 .btn {
 	.box-shadow(none);
 	border: none;
@@ -123,6 +131,7 @@ input[type="color"],
 	color: @white;
 	text-shadow: none;
 	padding: 7px 15px;
+	.border-radius(4px);
 
 	&:hover,
 	&:focus,
