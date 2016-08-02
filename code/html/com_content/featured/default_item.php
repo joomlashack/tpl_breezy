@@ -13,35 +13,15 @@ $app = JFactory::getApplication();
 
 require_once JPATH_THEMES . '/' . $app->getTemplate() . '/wright/html/overrider.php';
 
-$params = &$this->item->params;
-$images = json_decode($this->item->images);
 
-
-if ($images->image_intro != '')
-{
-    $this->item->wrightElementsStructure = Array(
-        "div.article-image",
-        "image",
-        "/div",
-        "div.article-content",
-        "title",
-        "icons",
-        "article-info",
-        "content",
-        "/div",
-    );
-}
-else
-{
-    $this->item->wrightElementsStructure = Array(
-        "image",
-        "div.article-content",
-        "title",
-        "icons",
-        "article-info",
-        "content",
-        "/div"
-    );
-}
+$this->item->wrightElementsStructure = Array(
+    "image",
+    "div.article-content",
+    "title",
+    "icons",
+    "article-info",
+    "content",
+    "/div"
+);
 
 include Overrider::getOverride('com_content.featured', 'default_item');
