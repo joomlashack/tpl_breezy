@@ -19,12 +19,17 @@ body {
 
 a {
 	.transition(all 0.2s linear 0s);
+	font-weight: 400;
 
 	&:hover,
 	&:focus,
 	&:active {
 		text-decoration: none;
 	}
+}
+
+p {
+	margin: 0 0 20px;
 }
 
 textarea,
@@ -102,6 +107,35 @@ input[type="color"],
 	.border-radius(0);
 	padding: 30px;
 	border: none;
+	text-shadow: none;
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		font-weight: 400;
+	}
+}
+
+.btn {
+	.box-shadow(none);
+	border: none;
+	background: @color_one;
+	color: @white;
+	text-shadow: none;
+	padding: 7px 15px;
+	font-weight: 400;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: @color_one;
+		color: @white;
+		-o-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.15), 0 4px 15px 0 rgba(0, 0, 0, 0.20);
+		-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.15), 0 4px 15px 0 rgba(0, 0, 0, 0.20);
+		-moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.15), 0 4px 15px 0 rgba(0, 0, 0, 0.20);
+		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.15), 0 4px 15px 0 rgba(0, 0, 0, 0.20);
+	}
 }
 
 /* Articles
@@ -109,6 +143,20 @@ input[type="color"],
 
 p.readmore {
 	float: none;
+	margin-bottom: 20px;
+
+	.icon-chevron-right {
+		display: none;
+	}
+}
+
+.pagination {
+	display: block;
+	text-align: left;
+
+	.counter {
+		margin-right: 0;
+	}
 }
 
 /* Header
@@ -158,13 +206,14 @@ p.readmore {
 
 #featured {
 	background: @white;
+	margin-bottom: 30px;
 }
 
 /* Main content
  ========================================================================== */
 
 #main-content {
-
+	font-weight: 300;
 }
 
 /* Footer
