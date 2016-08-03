@@ -152,6 +152,23 @@
 			width: 30px !important;
 		}
 	}
+
+	#featured,
+	#grid-top,
+	#grid-top2,
+	#breadcrumbs,
+	#grid-bottom,
+	#grid-bottom2,
+	#above-content {
+
+		[class*="module"] {
+			margin-bottom: 20px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 @media (max-width: 480px) {

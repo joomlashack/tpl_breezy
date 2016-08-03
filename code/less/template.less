@@ -151,7 +151,6 @@ input[type="color"],
 #breadcrumbs,
 #grid-bottom,
 #grid-bottom2,
-#grid-bottom3,
 #above-content {
 	margin-bottom: 30px;
 }
@@ -352,6 +351,21 @@ p.readmore {
 
 	.badge {
 		background: @white;
+	}
+
+	a {
+		background: darken(@yellow, 5%);
+		color: @white;
+		padding: 1px 9px;
+		.border-radius(9px);
+		font-size: 0.9em;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: @white;
+			color: darken(@yellow, 5%);
+		}
 	}
 }
 
