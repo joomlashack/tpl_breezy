@@ -52,7 +52,7 @@ defined('_JEXEC') or die('Restricted access');
 					:
 			?>
 			<div id="featured">
-				<w:module type="none" name="featured" chrome="xhtmlwright" />
+				<w:module type="none" name="featured" chrome="xhtmlwright" extradivs="module" />
 			</div>
 			<?php
 				endif;
@@ -103,7 +103,7 @@ defined('_JEXEC') or die('Restricted access');
 					?>
 					<!-- breadcrumbs -->
 					<div id="breadcrumbs">
-							<w:module type="single" name="breadcrumbs" chrome="none" />
+							<w:module type="single" name="breadcrumbs" chrome="none" extradivs="module" />
 					</div>
 					<?php
 						endif;
