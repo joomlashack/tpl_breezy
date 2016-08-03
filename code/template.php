@@ -52,7 +52,7 @@ defined('_JEXEC') or die('Restricted access');
 					:
 			?>
 			<div id="featured">
-				<w:module type="none" name="featured" chrome="xhtmlwright" extradivs="module" />
+                <w:module type="none" name="featured" chrome="xhtmlwright" />
 			</div>
 			<?php
 				endif;
@@ -63,7 +63,7 @@ defined('_JEXEC') or die('Restricted access');
 					:
 			?>
 			<div id="grid-top">
-				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-top" chrome="wrightflexgrid" extradivs="module" />
+				<w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" extradivs="module" />
 			</div>
 			<?php
 				endif;
@@ -74,7 +74,7 @@ defined('_JEXEC') or die('Restricted access');
 			?>
 			<!-- grid-top2 -->
 			<div id="grid-top2">
-				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-top2" chrome="wrightflexgrid" extradivs="module" />
+				<w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" extradivs="module" />
 			</div>
 			<?php
 				endif;
@@ -82,7 +82,7 @@ defined('_JEXEC') or die('Restricted access');
 			<div id="main-content" class="<?php echo $wrightGridMode; ?>">
 				<!-- sidebar1 -->
 				<aside id="sidebar1">
-					<w:module name="sidebar1" chrome="xhtmlwright" extradivs="module" />
+                    <w:module name="sidebar1" chrome="xhtmlwright" />
 				</aside>
 				<!-- main -->
 				<section id="main">
@@ -92,7 +92,7 @@ defined('_JEXEC') or die('Restricted access');
 					?>
 					<!-- above-content -->
 					<div id="above-content">
-						<w:module type="none" name="above-content" chrome="xhtmlwright" extradivs="module" />
+						<w:module type="none" name="above-content" chrome="xhtmlwright" />
 					</div>
 					<?php
 						endif;
@@ -103,7 +103,7 @@ defined('_JEXEC') or die('Restricted access');
 					?>
 					<!-- breadcrumbs -->
 					<div id="breadcrumbs">
-							<w:module type="single" name="breadcrumbs" chrome="none" extradivs="module" />
+							<w:module type="single" name="breadcrumbs" chrome="none" />
 					</div>
 					<?php
 						endif;
@@ -118,7 +118,7 @@ defined('_JEXEC') or die('Restricted access');
 					?>
 					<!-- below-content -->
 					<div id="below-content">
-						<w:module type="none" name="below-content" chrome="xhtmlwright" extradivs="module" />
+						<w:module type="none" name="below-content" chrome="xhtmlwright" />
 					</div>
 					<?php
 						endif;
@@ -126,7 +126,7 @@ defined('_JEXEC') or die('Restricted access');
 				</section>
 				<!-- sidebar2 -->
 				<aside id="sidebar2">
-					<w:module name="sidebar2" chrome="xhtmlwright" extradivs="module" />
+                    <w:module name="sidebar2" chrome="xhtmlwright" />
 				</aside>
 			</div>
 			<?php
@@ -135,7 +135,7 @@ defined('_JEXEC') or die('Restricted access');
 			?>
 			<!-- grid-bottom -->
 			<div id="grid-bottom" >
-				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-bottom" chrome="wrightflexgrid" extradivs="module" />
+				<w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" extradivs="module" />
 			</div>
 			<?php
 				endif;
@@ -146,7 +146,7 @@ defined('_JEXEC') or die('Restricted access');
 			?>
 			<!-- grid-bottom2 -->
 			<div id="grid-bottom2" >
-				<w:module type="<?php echo $wrightGridMode; ?>" name="grid-bottom2" chrome="wrightflexgrid" extradivs="module" />
+				<w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" extradivs="module" />
 			</div>
 			<?php
 				endif;
@@ -177,7 +177,7 @@ defined('_JEXEC') or die('Restricted access');
 					if ($this->countModules('footer'))
 					:
 				?>
-					<w:module type="<?php echo $wrightGridMode; ?>" name="footer" chrome="wrightflexgrid" extradivs="module" />
+					<w:module type="row-fluid" name="footer" chrome="wrightflexgrid" extradivs="module" />
 			 	<?php
 					endif;
 				?>
