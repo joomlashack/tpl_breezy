@@ -14,14 +14,29 @@ $app = JFactory::getApplication();
 require_once JPATH_THEMES . '/' . $app->getTemplate() . '/wright/html/overrider.php';
 
 
-$this->item->wrightElementsStructure = Array(
-    "image",
-    "div.article-content",
-    "title",
-    "icons",
-    "article-info",
-    "content",
-    "/div"
-);
+$params = $this->item->params;
+
+if ($params->get('show_title')) {
+    $this->item->wrightElementsStructure = Array(
+        "div.article-content",
+        "title",
+        "/div",
+        "image",
+        "div.article-content",
+        "icons",
+        "article-info",
+        "content",
+        "/div"
+    );
+} else {
+    $this->item->wrightElementsStructure = Array(
+        "image",
+        "div.article-content",
+        "icons",
+        "article-info",
+        "content",
+        "/div"
+    );
+}
 
 include Overrider::getOverride('com_content.featured', 'default_item');
