@@ -141,6 +141,21 @@ input[type="color"],
 	}
 }
 
+.badge {
+	text-shadow: none;
+}
+
+#featured,
+#grid-top,
+#grid-top2,
+#breadcrumbs,
+#grid-bottom,
+#grid-bottom2,
+#grid-bottom3,
+#above-content {
+	margin-bottom: 30px;
+}
+
 /* Articles
  ========================================================================== */
 
@@ -263,14 +278,6 @@ p.readmore {
 
 #featured {
 	background: @white;
-	margin-bottom: 30px;
-}
-
-/* Above content
- ========================================================================== */
-
-#above-content {
-	margin-bottom: 30px;
 }
 
 /* Footer
@@ -289,23 +296,18 @@ p.readmore {
 .footer-content {
 
 	a {
-		color: @color_two;
+		color: @yellow;
 
 		&:hover,
 		&:focus,
 		&:active {
-			color: darken(@color_two, 10%);
+			color: darken(@yellow, 10%);
 		}
 	}
 }
 
 /* Modules
  ========================================================================== */
-
-.module-inner {
-	background: #fff;
-	padding: 30px;
-}
 
 .module-background-light,
 .module-background-dark {
@@ -328,23 +330,81 @@ p.readmore {
 	background-color: @grayDark;
 }
 
+.module-blue,
+.module-green,
+.module-red,
+.module-white {
+
+	.module-inner {
+		padding: 30px;
+
+		h3 {
+			margin-top: 0;
+		}
+	}
+}
+
+.module-blue,
+.module-green,
+.module-red {
+
+	color: @white;
+
+	.badge {
+		background: @white;
+	}
+}
+
+.module-blue .badge {
+	color: @blue;
+}
+
+.module-green .badge {
+	color: @green;
+}
+
+.module-red .badge {
+	color: @red;
+}
+
+.module-white .badge {
+	color: @white;
+	background: @grayDark;
+}
+
+.module-blue {
+	background: @blue;
+}
+
+.module-green {
+	background: @green;
+}
+
+.module-red {
+	background: @red;
+}
+
+.module-white {
+	background: @white;
+}
+
 /* Custom
  ========================================================================== */
 
 .color-red {
-	color: #ff0000;
+	color: @red;
 }
 
 .color-green {
-	color: #6E9C27;
+	color: @green;
 }
 
 .color-blue {
-	color: #2184cd;
+	color: @blue;
 }
 
 .color-yellow {
-	color: #6E9C27;
+	color: @yellow;
 }
 
 /* Blink effect
