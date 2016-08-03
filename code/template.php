@@ -82,7 +82,7 @@ defined('_JEXEC') or die('Restricted access');
 			<div id="main-content" class="<?php echo $wrightGridMode; ?>">
 				<!-- sidebar1 -->
 				<aside id="sidebar1">
-                    <w:module name="sidebar1" chrome="xhtmlwright" />
+                    <w:module name="sidebar1" chrome="wrightxhtml" />
 				</aside>
 				<!-- main -->
 				<section id="main">
@@ -92,7 +92,7 @@ defined('_JEXEC') or die('Restricted access');
 					?>
 					<!-- above-content -->
 					<div id="above-content">
-						<w:module type="none" name="above-content" chrome="xhtmlwright" />
+						<w:module type="none" name="above-content" chrome="wrightxhtml" />
 					</div>
 					<?php
 						endif;
@@ -118,7 +118,7 @@ defined('_JEXEC') or die('Restricted access');
 					?>
 					<!-- below-content -->
 					<div id="below-content">
-						<w:module type="none" name="below-content" chrome="xhtmlwright" />
+						<w:module type="none" name="below-content" chrome="wrightxhtml" />
 					</div>
 					<?php
 						endif;
@@ -126,7 +126,7 @@ defined('_JEXEC') or die('Restricted access');
 				</section>
 				<!-- sidebar2 -->
 				<aside id="sidebar2">
-                    <w:module name="sidebar2" chrome="xhtmlwright" />
+                    <w:module name="sidebar2" chrome="wrightxhtml" />
 				</aside>
 			</div>
 			<?php
