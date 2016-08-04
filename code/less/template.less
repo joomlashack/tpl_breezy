@@ -80,7 +80,7 @@ input[type="color"],
 .nav-list {
 
 	> li > a {
-		background: @grayLighter;
+		background: rgba(51, 51, 51, 0.04);
 		margin-bottom: 1px;
 		text-shadow: none;
 		padding: 5px 15px;
@@ -122,16 +122,14 @@ input[type="color"],
 .btn {
 	.box-shadow(none);
 	border: none;
-	background: @color_one;
+	background-image: none;
 	color: @white;
 	text-shadow: none;
 	padding: 7px 15px;
 	.border-radius(4px);
 
 	&:hover,
-	&:focus,
-	&:active {
-		background: lighten(@color_one, 5%);
+	&:focus {
 		color: @white;
 		.box-shadow(none);
 	}
@@ -139,9 +137,19 @@ input[type="color"],
 	&:focus {
 		outline: none;
 	}
+
+	&.btn-link {
+		color: @color_one;
+
+		&:hover,
+		&:focus {
+			color: darken(@color_one, 5%);
+		}
+	}
 }
 
-.badge {
+.badge,
+.label {
 	text-shadow: none;
 }
 
@@ -155,12 +163,39 @@ input[type="color"],
 	margin-bottom: 30px;
 }
 
+/* Forms
+ ========================================================================== */
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+	.box-shadow(none);
+}
+
+#search-searchword {
+	padding: 6px 10px;
+}
+
 /* Articles
  ========================================================================== */
 
 p.readmore {
 	float: none;
 	margin-bottom: 20px;
+	clear: unset;
 
 	.icon-chevron-right {
 		display: none;
@@ -228,6 +263,31 @@ p.readmore {
 			}
 		}
 	}
+}
+
+dl.article-info {
+	color: @gray;
+
+	dd {
+
+		&:first-of-type {
+			padding-left: 0;
+		}
+
+		&:hover,
+		> div:hover {
+			background-color: transparent;
+		}
+	}
+}
+
+.item-page .item-image {
+	margin-bottom: 20px;
+}
+
+.items-more h3 {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 /* Header
@@ -315,6 +375,22 @@ p.readmore {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	padding: 80px 30px;
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4 {
+		margin-top: 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.badge {
+		background: @grayDark;
+	}
 }
 
 .module-background-light {
@@ -424,6 +500,25 @@ p.readmore {
 .module-white,
 .moduletable-white {
 	background: @white;
+}
+
+.breadcrumb {
+	.border-radius(0);
+	border-top: 2px solid @color_one;
+	background: transparent;
+	padding: 15px 0;
+
+	> li {
+		text-shadow: none;
+
+		> .divider {
+			color: @gray;
+		}
+	}
+
+	> .active {
+		color: @gray;
+	}
 }
 
 /* Custom
