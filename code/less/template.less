@@ -388,6 +388,15 @@ dl.article-info {
 	}
 }
 
+.is_iphone,
+.is_android {
+
+	.module-background-light,
+	.module-background-dark {
+		background-attachment: initial;
+	}
+}
+
 .module-background-light {
 	color: @grayDark;
 	background-color: @white;
@@ -548,6 +557,11 @@ dl.article-info {
 
 /* Easy social icons
  ========================================================================== */
+
+.text-center ul.jssocialicons-horizontal > li {
+	display: inline-block;
+	float: unset !important;
+}
 
 .is_iphone .text-center #easy-social-icons ul.jssocialicons-horizontal > li {
 	float: none;
