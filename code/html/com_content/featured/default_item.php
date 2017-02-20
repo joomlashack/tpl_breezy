@@ -25,7 +25,11 @@ if ($params->get('show_title')) {
         "div.article-content",
         "icons",
         "article-info",
+        "legendtop",
         "content",
+        "legendbottom",
+        "article-info-below",
+        "article-info-split",
         "/div"
     );
 } else {
@@ -34,7 +38,11 @@ if ($params->get('show_title')) {
         "div.article-content",
         "icons",
         "article-info",
+        "legendtop",
         "content",
+        "legendbottom",
+        "article-info-below",
+        "article-info-split",
         "/div"
     );
 }
