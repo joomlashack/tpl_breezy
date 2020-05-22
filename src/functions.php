@@ -12,13 +12,18 @@ defined('_JEXEC') or die('Restricted access');
 
 
 $background = $this->params->get('background', 2);
+$style      = $this->params->get('style', 'green');
 
 if($background == 1) {
+
+    if ($style == 'custom') {
+        $style = 'green';
+    }
 
     // The home background will be used in all pages
     JFactory::getDocument()->addStyleDeclaration(
         'body, body.home {
-            background-image: url(' . Juri::base() . 'templates/js_breezy/images/' . $this->params->get('style', 'green') . '/bg-home.png);
+            background-image: url(' . Juri::base() . 'templates/js_breezy/images/' . $style . '/bg-home.png);
         }'
     );
 
