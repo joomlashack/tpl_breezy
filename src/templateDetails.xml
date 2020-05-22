@@ -108,6 +108,13 @@
 				<field name="mobile_menu_text" type="text" default="" label="TPL_JS_WRIGHT_MOBILE_MENU_TEXT" description="TPL_JS_WRIGHT_MOBILE_MENU_TEXT_DESC" />
                 <!-- End of default Wright params -->
             </fieldset>
+            <fieldset name="breezy">
+                <field name="background" type="radio" class="btn-group" default="2" label="TPL_JS_WRIGHT_BACKGROUND" description="TPL_JS_WRIGHT_BACKGROUND_DESC">
+                    <option value="2">TPL_JS_WRIGHT_BACKGROUND_HOME</option>
+                    <option value="1">TPL_JS_WRIGHT_BACKGROUND_ALL_PAGES</option>
+                    <option value="0">TPL_JS_WRIGHT_BACKGROUND_NONE</option>
+                </field>
+            </fieldset>
             <fieldset name="footer" addfieldpath="/templates/js_breezy/form/fields">     
                 <field
                     type="customfooter"
