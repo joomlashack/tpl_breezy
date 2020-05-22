@@ -11,10 +11,10 @@
 defined('_JEXEC') or die('Restricted access');
 
 
-$background = $this->params->get('background', 2);
+$background = $this->params->get('background', 'home');
 $style      = $this->params->get('style', 'green');
 
-if($background == 1) {
+if($background == 'all') {
 
     if ($style == 'custom') {
         $style = 'green';
@@ -22,20 +22,9 @@ if($background == 1) {
 
     // The home background will be used in all pages
     JFactory::getDocument()->addStyleDeclaration(
-        'body, body.home {
+        'body {
             background-image: url(' . Juri::base() . 'templates/js_breezy/images/' . $style . '/bg-home.png);
         }'
     );
 
-} elseif($background == 0) {
-
-    // No image background in all pages, including home
-    JFactory::getDocument()->addStyleDeclaration(
-        'body, body.home {
-            background-image: none;
-        }'
-    );
-} else {
-
-    // Nothing to do here
 }
