@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.9" type="template" method="upgrade" client="site">
 	<name>js_breezy</name>
-	<creationDate>September 19 2019</creationDate>
+	<creationDate>May 25 2020</creationDate>
 	<author>Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>https://www.joomlashack.com</authorUrl>
-	<copyright>Copyright Joomlashack 2005 - 2019. All rights reserved</copyright>
+	<copyright>Copyright Joomlashack 2005 - 2020. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
 	<version>3.3.0</version>
     <description>TPL_JS_BREEZY_XML_DESCRIPTION</description>
@@ -107,6 +107,13 @@
 				<field name="mobilemenuspacer" label="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_label" description="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_DESC" type="spacer" />
 				<field name="mobile_menu_text" type="text" default="" label="TPL_JS_WRIGHT_MOBILE_MENU_TEXT" description="TPL_JS_WRIGHT_MOBILE_MENU_TEXT_DESC" />
                 <!-- End of default Wright params -->
+            </fieldset>
+            <fieldset name="breezy">
+                <field name="background" type="radio" class="btn-group" default="home" label="TPL_JS_WRIGHT_BACKGROUND" description="TPL_JS_WRIGHT_BACKGROUND_DESC">
+                    <option value="home">TPL_JS_WRIGHT_BACKGROUND_HOME</option>
+                    <option value="all">TPL_JS_WRIGHT_BACKGROUND_ALL_PAGES</option>
+                    <option value="0">TPL_JS_WRIGHT_BACKGROUND_DISABLED</option>
+                </field>
             </fieldset>
             <fieldset name="footer" addfieldpath="/templates/js_breezy/form/fields">     
                 <field
