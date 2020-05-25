@@ -112,6 +112,7 @@
                 <field name="background" type="radio" class="btn-group" default="2" label="TPL_JS_WRIGHT_BACKGROUND" description="TPL_JS_WRIGHT_BACKGROUND_DESC">
                     <option value="home">TPL_JS_WRIGHT_BACKGROUND_HOME</option>
                     <option value="all">TPL_JS_WRIGHT_BACKGROUND_ALL_PAGES</option>
+                    <option value="0">TPL_JS_WRIGHT_BACKGROUND_DISABLED</option>
                 </field>
             </fieldset>
             <fieldset name="footer" addfieldpath="/templates/js_breezy/form/fields">     
